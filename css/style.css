@@ -1130,3 +1130,85 @@ h2{
 	height: auto;
 	margin-left: auto;
 }
+
+/* Book Section */
+#book{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 32px;
+	flex-direction: column;
+}
+
+#book .book-container{
+	margin-top: 87px;
+	width: 100%;
+}
+
+#book .book-container h1{
+	display: inline-block;
+	font-size: 2em;
+	position: relative;
+	font-family: 'Titillium Web', sans-serif;
+	color: #57585A;
+}
+
+#book .book-container h1::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	background-color: #EE921A;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+}
+
+#book .book-container .book-shelves{
+	width: 100%;
+	margin: 40px 0 40px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+#book .book-container .book-shelves .book-img{
+	width: 100px;
+	height: 150px;
+	text-align: center;
+}
+
+#book .book-container .book-shelves .book-img img{
+	transition: all 0.2s;
+}
+
+#book .book-container .book-shelves .book-img img:hover{
+	transform: scale(1.1);
+}
+
+#book .book-container .book-shelves .book-img p{
+	font-weight: bold;
+}
+
+#book .book-container .book-shelves .book-img:hover p{
+	color: #EE921A;
+	font-weight: bold;
+}
+
+.breakline{
+	border: none;
+	height: 1px;
+	margin: 40px;
+	flex-shrink: 0;
+	background-color: rgba(0, 0, 0, .12);
+   }
+
+@media only screen and (max-width: 768px){
+	#book .book-container .book-shelves{
+		flex-wrap: wrap;
+		margin: 10px 0 10px 0;
+	}
+
+	#book .book-container .book-shelves .book-img{
+		margin-top: 50px;
+	}
+}
