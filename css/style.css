@@ -287,67 +287,41 @@ h2{
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#about .about-top {
-	max-width: auto;
-	padding-left: 100px;
-	padding-right: 100px;
-	margin: 0 auto;
-	text-align: start;
+#about .about-container{
+	margin: auto;
+	width: 70%;
+	padding-top: 10px;
+   	justify-content: flex-start;
+   	flex-direction: row;
+   	vertical-align: text-top;
+   	margin-top: 150px;
+	margin-bottom: 150px;
 }
-#about .about-top p{
-	font-weight: bold;
-	font-size: 20px;
-}
-#about .about-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-#about .about-item {
-	flex-basis: 80%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(img/coding.jpeg);
-	background-size: cover;
-	margin: 10px 5%;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-}
-#about .about-item::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #57585A 0%, #57585A 100%);
-	opacity: 0.9;
-	z-index: -1;
-}
-#about .about-bottom .icon {
-	height: 50px;
-	margin-bottom: 20px;
-}
-#about .about-item a {
-	font-size: 3.5rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-#about .about-item a:hover{
+#about .about-container h2{
+	font-size: 30px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bolder;
 	color: #EE921A;
 }
-#about .about-item p {
-	color: white;
-	text-align: left;
-	font-size: 2rem;
+#about .about-container p{
+	margin-left: 50px;
+	font-size: 20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #57585A;
+}
+#about .about-container p span{
+	font-size: 20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #EE921a;
+}
+#about .about-container li{
+	margin-left: 70px;
+	font-size: 20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #57585a;
 }
 /* End about Section */
 
@@ -876,7 +850,7 @@ h2{
 #login .Login_box .formBox .remember{
     margin-bottom: 10px;
     color: #57585A;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
 	font-family: 'Orbitron', sans-serif;
 }
@@ -1202,5 +1176,4 @@ h2{
 	#book .book-container .book-shelves .book-img{
 		margin-top: 50px;
 	}
->>>>>>> b0e58828ad8a4c4e8846fbbc650a7ce99f563b22
 }

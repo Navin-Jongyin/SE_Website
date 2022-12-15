@@ -31,4 +31,16 @@ accs.forEach((accordion_item) => {
     accordion_item.addEventListener("click", () => {
         accordion_item.classList.toggle("active");
     })
-})
+});
+
+function showPassword(){
+	var x = document.getElementById("my_input");
+	if (x.type === "password") 
+	{
+		x.type = "text";
+	} 
+	else 
+	{
+		x.type = "password";
+	}
+}
