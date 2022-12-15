@@ -1098,83 +1098,92 @@ h2{
 
 /* Book Section */
 #book{
-	width: 100%;
-	display: flex;
-	position: relative;
-	padding: 32px;
-	flex-direction: column;
-}
-
-#book .book-container{
 	margin-top: 87px;
-	width: 100%;
+	text-align: center;
+	padding: 50px;
 }
 
-#book .book-container h1{
-	display: inline-block;
-	font-size: 2em;
+#book .book-header{
+	margin-bottom: 100px;
 	position: relative;
-	font-family: 'Titillium Web', sans-serif;
-	color: #57585A;
+	display: inline-block;
 }
 
-#book .book-container h1::after{
+#book .book-header::after{
 	content: '';
 	position: absolute;
 	width: 100%;
-	background-color: #EE921A;
-	height: 2px;
 	bottom: 0;
 	left: 0;
-	border-radius: 5px;
+	height: 2px;
+	background-color: #EE921A;
 }
 
-#book .book-container .book-shelves{
+#book h1{
+	font-size: 32px;
+	margin-bottom: 1em;
+}
+
+#book .book-container{
 	width: 100%;
-	margin: 40px 0 40px 0;
 	display: flex;
-	justify-content: space-around;
+	margin-bottom: 10px;
 }
 
-#book .book-container .book-shelves .book-img{
-	width: 150px;
-	height: 220px;
-	text-align: center;
+#book .book-container .book-card{
+	width: 50%;
+	display: flex;
+	gap: 20px;
 }
 
-#book .book-container .book-shelves .book-img img{
-	transition: all 0.2s;
+#book .book-container .book-card .book-img{
+	width: 100%;
+	height: 100%;
 }
 
-#book .book-container .book-shelves .book-img img:hover{
-	transform: scale(1.1);
+#book .book-container .book-card .book-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-#book .book-container .book-shelves .book-img p{
-	margin-top: 10px;
-	font-weight: bold;
+#book .book-container .book-card .book-detail h1{
+	font-size: 24px;
 }
 
-#book .book-container .book-shelves .book-img:hover p{
-	color: #EE921A;
-	font-weight: bold;
+#book .book-container .book-card .book-detail p{
+	font-size: 16px;
+	margin-bottom: 2em;
 }
 
-.breakline{
-	border: none;
-	height: 1px;
-	margin: 40px;
-	flex-shrink: 0;
-	background-color: rgba(0, 0, 0, .12);
-   }
 
 @media only screen and (max-width: 768px){
-	#book .book-container .book-shelves{
-		flex-wrap: wrap;
-		margin: 10px 0 10px 0;
-	}
-
 	#book .book-container .book-shelves .book-img{
 		margin-top: 50px;
+	}
+
+	#book .book-container{
+		flex-direction: column;
+	}
+
+	#book .book-container .book-card{
+		width: 100%;
+		margin-bottom: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#book .book-container .book-card .book-img{
+		width: 200px;
+		height: 350px;
+		margin-bottom: 20px;
+	}
+
+	#book .book-container .book-card .book-detail h1{
+		font-size: 20px;
+	}
+
+	#book .book-container .book-card .book-detail p{
+		font-size: 12px;
 	}
 }
