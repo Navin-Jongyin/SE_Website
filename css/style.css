@@ -1194,6 +1194,72 @@ h2{
 	background-color: rgba(0, 0, 0, .12);
    }
 
+/*Lecturer*/
+
+#lecturer{
+	margin: 100px 0 55px 0;
+	width: 100%;
+	display: flex;
+}
+
+#lecturer .external .lecturer-list li{
+	list-style: none;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#lecturer .internal .lecturer-list li{
+	list-style: none;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#lecturer .internal{
+	width: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#lecturer .internal h1{
+	margin-bottom: 30px;
+	font-size: 32px;
+	position: relative;
+	display: inline-block;
+}
+
+#lecturer .internal h1::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #EE921A;
+	height: 2px;
+}
+
+#lecturer .external{
+	width: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#lecturer .external h1{
+	margin-bottom: 30px;
+	font-size: 32px;
+	position: relative;
+	display: inline-block;
+}
+
+#lecturer .external h1::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #EE921A;
+	height: 2px;
+}
+
 @media only screen and (max-width: 768px){
 	#book .book-container .book-shelves{
 		flex-wrap: wrap;
@@ -1202,5 +1268,15 @@ h2{
 
 	#book .book-container .book-shelves .book-img{
 		margin-top: 50px;
+	}
+
+	#lecturer{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#lecturer .internal .lecturer-list li{
+		margin-bottom: 15px;
 	}
 }
