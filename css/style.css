@@ -1163,8 +1163,8 @@ h2{
 }
 
 #book .book-container .book-shelves .book-img{
-	width: 100px;
-	height: 150px;
+	width: 150px;
+	height: 220px;
 	text-align: center;
 }
 
@@ -1177,6 +1177,7 @@ h2{
 }
 
 #book .book-container .book-shelves .book-img p{
+	margin-top: 10px;
 	font-weight: bold;
 }
 
@@ -1202,5 +1203,4 @@ h2{
 	#book .book-container .book-shelves .book-img{
 		margin-top: 50px;
 	}
->>>>>>> b0e58828ad8a4c4e8846fbbc650a7ce99f563b22
 }
