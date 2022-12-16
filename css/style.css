@@ -1192,3 +1192,22 @@ h2{
 		font-size: 12px;
 	}
 }
+
+@media only screen and (max-width: 1024px){
+	
+#login{
+	flex-direction: column;
+}
+
+#login .imgbox{
+	display: none;
+}
+
+#login .Login_box{
+	width: 100%;
+}
+
+#login .Login_box .formBox h2{
+	font-size: 18px;
+}
+}
