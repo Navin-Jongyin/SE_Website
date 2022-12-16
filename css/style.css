@@ -1153,9 +1153,14 @@ h2{
 
 #book .book-container .book-card .book-detail p{
 	font-size: 16px;
-	margin-bottom: 2em;
+	margin-bottom: 1.2em;
 }
 
+#book .book-container .book-card .book-detail a{
+	color: #57585a;
+	font-size: 16px;
+	padding: 20px 10px;
+}
 
 @media only screen and (max-width: 768px){
 	#book .book-container .book-shelves .book-img{
@@ -1168,7 +1173,7 @@ h2{
 
 	#book .book-container .book-card{
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 72px;
 		flex-direction: column;
 		align-items: center;
 	}
