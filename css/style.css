@@ -1127,7 +1127,7 @@ h2{
 #book .book-container{
 	width: 100%;
 	display: flex;
-	margin-bottom: 10px;
+	margin-bottom: 2.5em;
 }
 
 #book .book-container .book-card{
@@ -1211,4 +1211,3 @@ h2{
 	font-size: 18px;
 }
 }
-/* hello */
