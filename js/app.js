@@ -34,7 +34,7 @@ accs.forEach((accordion_item) => {
 });
 
 function showPassword(){
-	var x = document.getElementById("my_input");
+	var x = document.getElementById("std_password");
 	if (x.type === "password") 
 	{
 		x.type = "text";

@@ -520,6 +520,7 @@ h2{
 	letter-spacing: 0.1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 #footer .social-icon {
 	display: flex;
@@ -866,6 +867,18 @@ h2{
 }
 #login .Login_box .formBox .input_Box p a:hover{
 	color: blue;
+}
+#login .Login_box .formBox form p{
+	color: #57585A;
+	font-family: 'Orbitron', sans-serif;
+}
+#login .Login_box .formBox form a{
+	color: #EE921A;
+	font-family: 'Orbitron', sans-serif;
+}
+#login .Login_box .formBox form a:hover{
+	color: #e35205;
+	font-family: 'Orbitron', sans-serif;
 }
 #login .containerlogin{
 	display: flex;
