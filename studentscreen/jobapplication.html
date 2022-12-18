@@ -7,60 +7,98 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/style.css">
   <title>SE Website</title>
 
 </head>
+
 <body>
-     <!-- Header -->
-     <section id="header">
-        <div class="header container">
-          <div class="nav-bar">
-            <div class="brand">
-              <a href="../mainscreen/homepage.html">
-                <h1>SE <span>KMITL</span></h1>
-              </a>
-            </div>
-            <div class="nav-list">
-              <div class="hamburger">
-                <div class="bar"></div>
-              </div>
-              <ul>
-                <li><a href="studentForum.html" data-after="Forum">Forum</a></li>
-                <li><a href="studentBooks.html" data-after="Contact">Books</a></li>
-                <li><a href="jobapplication.html" data-after="Job Application">Job Application</a></li>
-                <li><a href="studentInfo.html"><i class="fa-solid fa-circle-user"></i></a></li>
-              </ul>
-            </div>
-          </div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="../mainscreen/homepage.html">
+            <h1>SE <span>KMITL</span></h1>
+          </a>
         </div>
-      </section>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="studentForum.html" data-after="Forum">Forum</a></li>
+            <li><a href="studentBooks.html" data-after="Contact">Books</a></li>
+            <li><a href="jobapplication.html" data-after="Job Application">Job Application</a></li>
+            <li><a href="studentInfo.html"><i class="fa-solid fa-circle-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- End Header -->
 
   <!--Content Start-->
-      <div class="slide-container">
-        <div class="main-scroll-div">
-          <div>
-              <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
-          </div>
-          <div class="cover">
-              <div class="scroll-images">
-                  <div class="child"><img class="child-img" src="images/alex-motoc-0POwK6iAiRQ-unsplash.jpg" alt="image"></div>
-                  <div class="child"><img class="child-img" src="images/alexander-andrews-BX4Q0gojWAs-unsplash.jpg" alt="image"></div>
-                  <div class="child"><img class="child-img" src="images/eberhard-grossgasteiger-GoSCLOjUQ08-unsplash.jpg" alt="image"></div>
-                  <div class="child"><img class="child-img" src="images/jakob-owens-O_bhy3TnSYU-unsplash.jpg" alt="image"></div>
-                  <div class="child"><img class="child-img" src="images/kajetan-sumila-4pSxYHIOvKM-unsplash.jpg" alt="image"></div>
-                  <div class="child"><img class="child-img" src="images/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg" alt="image"></div>
+  <section id="sidescroll">
+    <div class="slide-container">
+      <div class="header">
+        <h1>JOB APPLICATION</h1>
+      </div>
+      <div class="main-scroll-div">
+        <div>
+          <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="cover">
+          <div class="scroll-images">
+            <div class="child">
+              <img class="child-img" src="../img/lmwn_intern.webp" alt="image">
+              <div class="jobdetail">
+                <h1>Lineman Wongnai</h1>
               </div>
-          </div>
-          <div>
-              <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+              <div class="jobdetail">
+                <a href="https://careers.lmwn.com/lmwn-junior" target="_blank">Apply Now</a>
+              </div>
+            </div>
+            <div class="child">
+              <img class="child-img" src="../img/agodalogo.png" alt="image">
+              <div class="jobdetail">
+                <h1>Agoda</h1>
+              </div>
+              <div class="jobdetail">
+                <a href="https://careersatagoda.com/" target="_blank">Apply Now</a>
+              </div>
+            </div>
+            <div class="child">
+              <img class="child-img" src="../img/kbtg.png" alt="image">
+              <div class="jobdetail">
+                <h1>Kasikorn Business-Technology Group</h1>
+              </div>
+              <div class="jobdetail">
+                <a href="https://www.kbtg.tech/career" target="_blank">Apply Now</a>             
+              </div>
+            </div>
+            <div class="child">
+              <img class="child-img" src="../img/primo.png" alt="">
+              <div class="jobdetail">
+                <h1>Primo World</h1>
+              </div>
+              <div class="jobdetail">
+                <a href="https://career.primo.mobi/" target="_blank">Apply Now</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div>
+          <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+        </div>
       </div>
-   <!-- Footer-->
-   <section id="footer">
+    </div>
+  </section>
+  <!-- Footer-->
+  <section id="footer">
     <div class="footer container">
       <div class="brand">
         <img src="../img/KMITL_Logo.png" style="width: 100px;">
@@ -71,11 +109,13 @@
           <a href="https://web.facebook.com/KMITL.SIIE" target="_blank"><img src="../img/facebook.png" /></a>
         </div>
         <div class="social-item">
-          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=siie_kmitl" target="_blank"><img src="../img/line.png" /></a>
+          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=siie_kmitl" target="_blank"><img
+              src="../img/line.png" /></a>
         </div>
       </div>
     </div>
   </section>
   <script src="../js/app.js"></script>
 </body>
+
 </html>
