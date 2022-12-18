@@ -44,3 +44,13 @@ function showPassword(){
 		x.type = "password";
 	}
 }
+
+function scrolll() {
+	var left = document.querySelector(".scroll-images");
+	left.scrollBy(-550, 0)
+}
+
+function scrollr() {
+	var right = document.querySelector(".scroll-images");
+	right.scrollBy(550, 0)
+}
