@@ -21,8 +21,8 @@ a {
 	justify-content: center;
 }
 img {
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: 70%;
 	margin: auto;
 	object-fit: cover;
 	display: block;
@@ -31,11 +31,13 @@ img {
 }
 p {
 	color: #57585A;
-	font-size: 13px;
+	font-size: 16px;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: bold;
 	letter-spacing: 0.05rem;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 200%;
 }
 h2{
 	font-size: 2.5rem;
@@ -534,6 +536,7 @@ h2{
 /*End student Section */
 
 /*Content Section*/
+
 h2{
 	display: block;
 	font-size: 1.5em;
@@ -542,6 +545,7 @@ h2{
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
 }
 
 li::marker{
@@ -553,8 +557,8 @@ li::marker{
 	text-align-last: start !important;
 }
 
-.year_num{
-	font-size: 36px;
+.year_num h1{
+	font-size: 40px;
 	padding: 10px;
 }
 .year_num span{
@@ -573,6 +577,7 @@ li::marker{
 }
 
 .semeter-one p{
+	font-size: 18px;
 	font-weight: bold;
 	padding: 10px;
 }
@@ -582,6 +587,7 @@ li::marker{
 }
 
 .semeter-two p{
+	font-size: 18px;
 	font-weight: bold;
 	padding: 10px;
 }
@@ -667,20 +673,28 @@ li::marker{
 	flex-shrink: 0;
 	background-color: rgba(0, 0, 0, .12);
 }
+#content{
+	width:70% ;
+	margin: auto;
+}
 #content h1 span{
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 20px;
-	color: #57585A;
+	color: #EE921A;
 }
 #content h2 span{
-	font-family: 'Titillium Web', sans-serif;
-	color: #57585A;
+	font-family: 'Orbitron', sans-serif;
+	color: #EE921A;
+}
+#content hr{
+	width: 100%;
 }
 
 
 
 #path{
 	padding: 0;
+	font-size: 12px;
 	color: #EE921A;
 }
 
