@@ -304,8 +304,8 @@ h2{
    	vertical-align: text-top;
    	margin-top: 120px;
 	margin-bottom: 120px;
-	background-color: #e1e1e1;
 	border-radius: 10px;
+	box-shadow: 0px 0px 15px 11px rgba(87, 88, 90, 0.23); ;
 }
 #about .about-container h2{
 	font-size: 30px;
@@ -458,6 +458,12 @@ h2{
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+#admission .col-right .cta:hover {
+	color: #fff;
+	
 }
 #admission .col-left .admission-img {
 	height: 100%;
@@ -888,7 +894,7 @@ h2{
 #login .Login_box .formBox .input_Box p a:hover{
 	color: blue;
 }
-#login .Login_box .formBox form p{
+#login .Login_box .formBox p{
 	color: #57585A;
 	font-family: 'Orbitron', sans-serif;
 }
@@ -924,13 +930,16 @@ h2{
 	margin-top: 100px;
 }
 #uog .containerUog h2{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 25px;
-	color: #575757;
+	color: #EE921A;
+	margin-bottom: 15px;;
+	margin-top: 15px;
 }
 #uog .containerUog p{
 	font-family: 'Montserrat', sans-serif;
 	color: #575757;
+	margin-bottom: 15px;
 }
 #uog .containerUog p strong{
 	font-family: 'Montserrat', sans-serif;
@@ -989,13 +998,14 @@ h2{
    	margin-top: 100px;
 }
 #exchange .containerEx h2{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 25px;
-	color: #575757;
+	color: #EE921A;
 }
 #exchange .containerEx p{
 	font-family: 'Montserrat', sans-serif;
 	color: #575757;
+	line-height: 200%;
 }
 #exchange .containerEx a{
 	font-family: 'Montserrat', sans-serif;
@@ -1006,6 +1016,9 @@ h2{
 }
 #exchange .containerEx img{
 	width: 295px;
+	margin: auto;
+	justify-content: center ;
+	text-align: center;
 }
 #exchange .containerEx p strong{
 	font-family: 'Montserrat', sans-serif;
@@ -1014,6 +1027,11 @@ h2{
 }
 #exchange .containerEx .table img{
 	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 #exchange .containerEx li{
 	font-family: 'Montserrat', sans-serif;
@@ -1021,6 +1039,7 @@ h2{
 	font-size: 16px;
 	font-weight: bold;
 	padding-left: 50px;
+	line-height: 200%
 }
 
 /* Internship Section */
@@ -1037,10 +1056,10 @@ h2{
    	vertical-align: text-top;
    	margin-top: 100px;
 }
-#inernship .containerintern h2{
-	font-family: 'Montserrat', sans-serif;
+#internship .containerintern h2{
+	font-family: 'Orbitron', sans-serif;
 	font-size: 25px;
-	color: #575757;
+	color: #EE921A;
 }
 #internship .containerintern p{
 	font-family: 'Montserrat', sans-serif;
@@ -1077,6 +1096,22 @@ h2{
 }
 #internship .containerintern p a:hover{
 	color: #E35205;
+}
+#internship .containerintern img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#internship .reportbtn a{
+	padding: 10px;
+	border: 1px solid #EE921A;
+	font-size: 16px;
+	color: #57585A;
+	border-radius: 10px;
+}
+#internship .reportbtn a:hover{
+	background-color: #EE921A;
+	color: #fff;
 }
 /* SE Program */
 #seProgram{
@@ -1163,8 +1198,8 @@ h2{
 	display: flex;
 	gap: 20px;
 	border-radius: 10px;
-	background-color: #e2e2e2;
 	margin: 10px;
+	box-shadow: 0px 0px 15px 11px rgba(87, 88, 90, 0.23); ;
 }
 
 #book .book-container .book-card .book-img{
@@ -1191,13 +1226,19 @@ h2{
 	line-height: 200%;
 }
 
-#book .book-container .book-card .book-detail a{
+#book .book-container .book-card .book-detail .cta{
 	color: #57585a;
 	font-size: 16px;
 	padding: 20px 10px;
 	margin-bottom: 10px;
+	border-radius: 10px;
+	transition: ease 0.5s;
 }
+#book .book-container .book-card .book-detail .cta:hover{
+	color: #fff;
+	transform: scale(1.1);
 
+}
 @media only screen and (max-width: 768px){
 	#book .book-container .book-shelves .book-img{
 		margin-top: 50px;
@@ -1674,15 +1715,22 @@ h2{
 
 }
 
-.slide-container{
-	display: flex;
+#sidescroll .slide-container{
+	/* display: flex; */
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 120px;
+}
+#sidescroll .header h1{
+	font-size: 60px;
+	font-family: 'Orbitron', sans-serif;
+	color: #57585A;
+	text-align: center;
+	margin-bottom: 100px;
 }
 
-.main-scroll-div {
+#sidescroll .main-scroll-div {
 	width: 90%;
 	height: 100%;
 	display: flex;
@@ -1690,16 +1738,17 @@ h2{
 	justify-content: space-between;
 	margin: auto;
 	padding: auto;
+	margin-bottom: 150px;
 	/* border: 2px solid red; */
 }
 
-.cover {
+#sidescroll .cover {
 	position: relative;
 	width: 90%;
 	height: 50%;
 }
 
-.scroll-images {
+#sidescroll .scroll-images {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -1708,33 +1757,65 @@ h2{
 	overflow: auto;
 	position: relative;
 	scroll-behavior: smooth;
+	padding: 32px;
 }
 
-.child {
+#sidescroll .child {
 	min-width: 600px;
 	height: 450px;
 	margin: 1px 10px;
 	cursor: pointer;
-	border: 2px solid rgba(207, 201, 201, .3);
+	box-shadow: 0px 0px 15px 11px rgba(87, 88, 90, 0.23);
 	overflow: hidden;
+	border-radius: 15px;
 }
 
-.scroll-images::-webkit-scrollbar {
+#sidescroll .scroll-images::-webkit-scrollbar {
 	-webkit-appearance: none;
 }
 
-.child-img {
-	width: 100%;
-	height: 100%;
-}
 
-.icon {
+#sidescroll .child-img {
+	height: auto;
+	width: 100%;
+}
+#sidescroll .jobdetail{
+	padding: 20px;
+	display: inlinbe-block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+#sidescroll .jobdetail h1{
+	font-size: 25px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	color: #57585a;
+}
+#sidescroll .jobdetail a{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #57585A;
+	padding: 15px 10px 15px 10px;
+	background-color: #fff;
+	text-align: center;
+	border: 2px solid #ee921a;
+	border-radius: 15px;
+	transition: ease 0.5s;
+}
+#sidescroll .jobdetail a:hover{
+	background-color: #ee921A;
+	color: white;
+	transform: scale(1.2);
+}
+#sidescroll .icon {
 	color: #ee921A;
 	font-size: 50px;
 	outline: none;
 	border: none;
 	padding: opx 20px;
 	cursor: pointer;
+	background-color: transparent;
 }
 
 #stdInfo{
