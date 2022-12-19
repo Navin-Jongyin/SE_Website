@@ -11,8 +11,9 @@
   <title>SE Website</title>
 
 </head>
+
 <body>
-     <!-- Header -->
+  <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
@@ -44,96 +45,97 @@
     <div class="Login_box">
       <div class="formBox">
         <h2>Student Login</h2>
-          <div class="input_Box">
-            <span>Student ID</span>
-            <input type="text" name="email" id="email">
+        <div class="input_Box">
+          <span>Student ID</span>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="input_Box">
+          <span>Password</span>
+          <input type="password" id="std_password">
+        </div>
+        <div class="containerlogin">
+          <div class="remember">
+            <label><input type="checkbox" onclick="showPassword()" name="" id="user_epassword">&nbsp;Show
+              Password</label>
           </div>
-          <div class="input_Box">
-            <span>Password</span>
-            <input type="password" id="std_password">
-          </div>
-          <div class="containerlogin">
-            <div class="remember">
-              <label><input type="checkbox" onclick="showPassword()" name="" id="user_epassword">&nbsp;Show Password</label>
-            </div>
-          </div>
-          <div class="input_Box">
-            <input type="submit" value="Sign in" name="" id="login_btn" onclick="signIn()">
-          </div>
-          <p>Don't have an account? <a href="signup.html">&ensp;Click Here!</a></p>
+        </div>
+        <div class="input_Box">
+          <input type="submit" value="Sign in" name="" id="login_btn" onclick="signIn()">
+        </div>
+        <p>Don't have an account? <a href="signup.html">&ensp;Click Here!</a></p>
       </div>
     </div>
   </section>
   <script src="/SE_Website/js/app.js"></script>
   <script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-		import {getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-		import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-	
-		// Your web app's Firebase configuration
-		const firebaseConfig = {
-			apiKey: "AIzaSyCHSpfjyMJYphI9St212Y6cg4weXEqM-mA",
-			authDomain: "se-auth-5643a.firebaseapp.com",
-			databaseURL: "https://se-auth-5643a-default-rtdb.firebaseio.com",
-			projectId: "se-auth-5643a",
-			storageBucket: "se-auth-5643a.appspot.com",
-			messagingSenderId: "201795593379",
-			appId: "1:201795593379:web:418ccef7da4c9c8a244b16"
-		};
-	
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const database = getDatabase(app);
-		const auth = getAuth();
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCHSpfjyMJYphI9St212Y6cg4weXEqM-mA",
+      authDomain: "se-auth-5643a.firebaseapp.com",
+      databaseURL: "https://se-auth-5643a-default-rtdb.firebaseio.com",
+      projectId: "se-auth-5643a",
+      storageBucket: "se-auth-5643a.appspot.com",
+      messagingSenderId: "201795593379",
+      appId: "1:201795593379:web:418ccef7da4c9c8a244b16"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
 
     login_btn.addEventListener('click', (e) => {
-      
+
       var email = document.getElementById('email').value;
-			var password = document.getElementById('std_password').value;
+      var password = document.getElementById('std_password').value;
 
       signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
 
-        const dt = new Date();
-        update(ref(database, 'users/' + user.uid), {
-          last_login: dt
-				}).then(() => {
+          const dt = new Date();
+          update(ref(database, 'users/' + user.uid), {
+            last_login: dt
+          })
+
           alert('Login Succesfully');
           window.location.href = '../studentscreen/studentForum.html'
+          // ...
         })
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-				const errorMessage = error.message;
-        alert(errorMessage);
-      })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(errorMessage);
+        })
     });
 
-    function signIn(){
+    function signIn() {
       var email = document.getElementById('email').value;
-			var password = document.getElementById('std_password').value;
+      var password = document.getElementById('std_password').value;
 
-      firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
         var errorCode = error.code;
         var errorMessage = error.message;
         window.alert(errorCode);
       });
 
       var user = firebase.auth().currentUser;
-      if(user) {
+      if (user) {
         console.log(user);
         window.location("studentForum.html");
-      }else{
+      } else {
         alert('Incorrect Email or Password');
       }
     }
 
-	</script>
+  </script>
 
 </html>
