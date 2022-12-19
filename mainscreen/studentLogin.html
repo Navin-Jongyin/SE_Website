@@ -102,10 +102,10 @@
         const dt = new Date();
         update(ref(database, 'users/' + user.uid), {
           last_login: dt
-				})
-
-        alert('Login Succesfully');
-        window.location.href = '../studentscreen/studentForum.html'
+				}).then(() => {
+          alert('Login Succesfully');
+          window.location.href = '../studentscreen/studentForum.html'
+        })
         // ...
       })
       .catch((error) => {
