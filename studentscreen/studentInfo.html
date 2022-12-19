@@ -94,5 +94,19 @@
     </div>
   </section>
   <script src="../js/app.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCHSpfjyMJYphI9St212Y6cg4weXEqM-mA",
+      authDomain: "se-auth-5643a.firebaseapp.com",
+      databaseURL: "https://se-auth-5643a-default-rtdb.firebaseio.com",
+      projectId: "se-auth-5643a",
+      storageBucket: "se-auth-5643a.appspot.com",
+      messagingSenderId: "201795593379",
+      appId: "1:201795593379:web:418ccef7da4c9c8a244b16"
+    };
+    firebase.initializeApp(firebaseConfig);
+    var firebaseRef = firebase.database().ref("users");
+    firebaseRef.once("")
+  </script>
 </body>
 </html>
