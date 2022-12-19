@@ -521,6 +521,7 @@ h2 {
 
 #admission .col-right {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 #admission .col-right h2 {
@@ -536,7 +537,6 @@ h2 {
 
 #admission .col-right .cta {
 	color: #57585A;
-	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 	border-radius: 10px;
@@ -550,7 +550,7 @@ h2 {
 
 #admission .col-left .admission-img {
 	height: 100%;
-	width: 100%;
+	width: auto;
 	position: relative;
 	border: 10px solid white;
 }
@@ -785,6 +785,7 @@ h2 {
 		text-align: left;
 		padding: 30px;
 	}
+	
 
 	#admission .col-right h1 {
 		text-align: left;
